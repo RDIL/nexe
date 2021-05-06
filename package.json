@@ -9,8 +9,7 @@
     "Caleb Boyd <caleb.boyd@hotmail.com>"
   ],
   "scripts": {
-    "ci:build": "ts-node tasks/build",
-    "prepare": "npm run build",
+    "prepare": "yarn build",
     "prebuild": "rimraf lib",
     "build": "tsc --declaration",
     "postbuild": "ts-node tasks/post-build"
@@ -28,7 +27,7 @@
     "nexe": "index.js"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "dependencies": {
     "@calebboyd/semaphore": "^1.3.1",
